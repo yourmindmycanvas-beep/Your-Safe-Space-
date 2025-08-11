@@ -10,7 +10,6 @@ app.use(cors());
 app.use(express.json());
 
 // serve static files from /public
-app.use(express.static(path.join(__dirname, "public")));
 
 // health check for Render
 app.get("/healthz", (_req, res) => res.send("OK"));
